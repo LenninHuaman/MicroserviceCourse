@@ -7,7 +7,7 @@ spring:
             server:
                 git:
                     default-label: ConfigServer
-                    uri: https://github.com/LenninHuaman/MicroserviceCourse/tree/ConfigServer
+                    uri: https://github.com/LenninHuaman/MicroserviceCourse
                     search-paths: config-data
     application:
         name: config-server
