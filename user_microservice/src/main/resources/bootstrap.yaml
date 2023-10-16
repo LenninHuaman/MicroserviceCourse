@@ -3,4 +3,5 @@ spring:
         name: user_microservice
     cloud:
         config:
+            enabled: true
             uri: http://localhost:8081
