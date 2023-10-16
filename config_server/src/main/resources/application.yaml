@@ -1,0 +1,9 @@
+server:
+    port: 8001
+
+spring:
+    config:
+        server:
+            git:
+                default-label: ConfigServer
+
