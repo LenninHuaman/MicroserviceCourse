@@ -2,12 +2,13 @@ server:
     port: 8001
 
 spring:
-    config:
-        server:
-            git:
-                default-label: ConfigServer
-                uri: https://github.com/LenninHuaman/MicroserviceCourse/tree/ConfigServer
-                search-paths: config-data
+    cloud:
+        config:
+            server:
+                git:
+                    default-label: ConfigServer
+                    uri: https://github.com/LenninHuaman/MicroserviceCourse/tree/ConfigServer
+                    search-paths: config-data
     application:
         name: config-server
 
