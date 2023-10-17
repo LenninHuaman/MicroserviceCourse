@@ -6,7 +6,7 @@ spring:
         config:
             server:
                 git:
-                    default-label: Eureka
+                    default-label: MultiInstance
                     uri: https://github.com/LenninHuaman/MicroserviceCourse
                     search-paths: config-data
     application:
