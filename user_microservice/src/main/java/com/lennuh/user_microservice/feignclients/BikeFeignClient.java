@@ -12,10 +12,10 @@ import com.lennuh.user_microservice.model.Bike;
 @FeignClient(name = "bike-microservice")
 public interface BikeFeignClient {
 
-    @PostMapping
+    @PostMapping("/bikes")
     public Bike createBike(Bike bike);
     
-    @GetMapping("/byuser/{userId}")
+    @GetMapping("/bikes/byuser/{userId}")
     public List<Bike> getBikesByUserId(@PathVariable("userId") long userId);    
     
 }

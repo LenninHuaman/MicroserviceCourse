@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.lennuh.user_microservice.model.Car;
 
-@FeignClient(name = "car_microservice")
+@FeignClient(name = "car-microservice")
 public interface CarFeignClient {
 
     @PostMapping("/cars")

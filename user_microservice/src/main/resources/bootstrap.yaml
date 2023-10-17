@@ -1,6 +1,6 @@
 spring:
     application: 
-        name: user_microservice
+        name: user-microservice
     cloud:
         config:
             enabled: true
