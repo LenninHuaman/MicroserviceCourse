@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.lennuh.user_microservice.model.Car;
 
-@FeignClient(name = "car-microservice", url = "http://localhost:8082/cars")
+@FeignClient(name = "car_microservice")
 public interface CarFeignClient {
 
-    @PostMapping
+    @PostMapping("/cars")
     public Car createCar(Car car);
 
-    @GetMapping("/byuser/{userId}")
+    @GetMapping("/cars/byuser/{userId}")
     public List<Car> getCarsByUserId(@PathVariable("userId") long userId);    
 }

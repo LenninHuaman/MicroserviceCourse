@@ -1,6 +1,6 @@
 spring:
     application: 
-        name: car_microservice
+        name: bike_microservice
     cloud:
         config:
             enabled: true
