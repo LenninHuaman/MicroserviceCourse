@@ -1,6 +1,5 @@
 package com.lennuh.user_microservice.controller;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -97,21 +96,20 @@ public class UserController {
     }
 
     //Fallback reponse methods    
-    private ResponseEntity<List<Car>> fallbackGetCars(@PathVariable("userId") long userId) {
+    private ResponseEntity<List<Car>> fallbackGetCars(@PathVariable("userId") long userId, RuntimeException e) {
         return new ResponseEntity("No cars available", HttpStatus.OK);
     }
 
-    private ResponseEntity<List<Bike>> fallbackGetBikes(@PathVariable("userId") long userId) {
+    private ResponseEntity<List<Bike>> fallbackGetBikes(@PathVariable("userId") long userId, RuntimeException e) {
         return new ResponseEntity("No bikes available", HttpStatus.OK);
     }
-    private ResponseEntity<Car> fallbackAddCar(@PathVariable("userId") long userId, @RequestBody Car car) {
+    private ResponseEntity<Car> fallbackAddCar(@PathVariable("userId") long userId, @RequestBody Car car, RuntimeException e) {
         return new ResponseEntity("You can not add a car now", HttpStatus.OK);
     }
-    private ResponseEntity<Bike> fallbackAddBike(@PathVariable("userId") long userId, @RequestBody Bike bike) {
+    private ResponseEntity<Bike> fallbackAddBike(@PathVariable("userId") long userId, @RequestBody Bike bike, RuntimeException e) {
          return new ResponseEntity("You can not add a bike now", HttpStatus.OK);
-
     }
-    private ResponseEntity<Map<String, Object>> fallbackGetAll(@PathVariable("userId") long userId) {
+    private ResponseEntity<Map<String, Object>> fallbackGetAll(@PathVariable("userId") long userId, RuntimeException e) {
         return new ResponseEntity("One or more vehicules are not available", HttpStatus.OK);
     }
 }
