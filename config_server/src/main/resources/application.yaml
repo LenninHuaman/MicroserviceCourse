@@ -6,7 +6,7 @@ spring:
         config:
             server:
                 git:
-                    default-label: CircuitBreaker
+                    default-label: Zipkin
                     uri: https://github.com/LenninHuaman/MicroserviceCourse
                     search-paths: config-data
     application:

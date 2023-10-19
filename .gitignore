@@ -295,4 +295,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Zipkin
+zipkin.jar
+zipkin.jar.asc
+zipkin.jar.md5
+
+
 # End of https://www.toptal.com/developers/gitignore/api/java,visualstudiocode,jetbrains,intellij,vim,linux,windows

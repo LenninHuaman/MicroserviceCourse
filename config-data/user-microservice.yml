@@ -38,3 +38,11 @@ resilience4j.circuitbreaker:
             waitDurationInOpenState: 3s
             failureRateThreshold: 50
             eventConsumerBufferSize: 10
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: localhost:9411
